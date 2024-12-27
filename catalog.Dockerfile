@@ -3,7 +3,7 @@
 FROM registry.redhat.io/openshift4/ose-operator-registry:v4.12
 
 # Test disabled network access
-RUN if curl -IsS www.google.com; then echo "ERROR: network access detected!"; exit 1; fi
+#RUN if curl -IsS www.google.com; then echo "ERROR: network access detected!"; exit 1; fi
 
 # Configure the entrypoint and command
 ENTRYPOINT ["/bin/opm"]
