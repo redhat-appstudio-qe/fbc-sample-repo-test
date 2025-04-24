@@ -391,7 +391,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-test-component-pac-bnrcql
   workspaces:
   - name: git-auth
     secret:
